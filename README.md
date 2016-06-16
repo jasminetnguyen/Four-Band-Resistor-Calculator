@@ -2,7 +2,7 @@
 
 ##Stack Used
 
- ### Backend
+### Backend
  - C#
  - Entity Framework
  - Web API
