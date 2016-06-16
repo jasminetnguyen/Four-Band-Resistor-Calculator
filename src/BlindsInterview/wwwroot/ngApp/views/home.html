@@ -1,0 +1,98 @@
+<form>
+    <h2 layout="column" layout-padding layout-align="center center" class="font">Four Band Resistor Calculator</h2>
+    <hr />
+    <div layout="row" layout-padding layout-align="space-around center">
+        <div class="md-padding" ng-cloak>
+            <div>
+                <div layout="row">
+                    <md-input-container>
+                        <label class="font">Band One</label>
+                        <md-select ng-change="vm.calculateValue()" ng-model="vm.selectedBandOne" class="selection" md-selected-text="vm.selectedBandOne.color">
+                            <md-optgroup label="Band One">
+                                <md-option ng-value="resistor" ng-repeat="resistor in vm.resistors" class="drop"> {{resistor.color}}</md-option>
+                            </md-optgroup>
+                        </md-select>
+                    </md-input-container>
+                </div>
+            </div>
+        </div>
+        <div class="md-padding" ng-cloak>
+            <div>
+                <div layout="row">
+                    <md-input-container>
+                        <label class="font">Band Two</label>
+                        <md-select ng-change="vm.calculateValue()" ng-model="vm.selectedBandTwo" class="selection" md-selected-text="vm.selectedBandTwo.color">
+                            <md-optgroup label="Band Two">
+                                <md-option ng-value="resistor" ng-repeat="resistor in vm.resistors" class="drop"> {{resistor.color}}</md-option>
+                            </md-optgroup>
+                        </md-select>
+                    </md-input-container>
+                </div>
+            </div>
+        </div>
+        <div class="md-padding" ng-cloak>
+            <div>
+                <div layout="row">
+                    <md-input-container>
+                        <label class="font">Band Three</label>
+                        <md-select ng-change="vm.calculateValue()" ng-model="vm.selectedBandThree" class="selection" md-selected-text="vm.selectedBandThree.color">
+                            <md-optgroup label="Band Three">
+                                
+                                <md-option ng-value="resistor" ng-repeat="resistor in vm.resistors" class="drop"> {{resistor.color}}</md-option>
+                            </md-optgroup>
+                        </md-select>
+                    </md-input-container>
+                </div>
+            </div>
+        </div>
+        <div class="md-padding" ng-cloak>
+            <div>
+                <div layout="row">
+                    <md-input-container>
+                        <label class="font">Band Four</label>
+                        <md-select ng-change="vm.calculateValue()" ng-model="vm.selectedBandFour" class="selection" md-selected-text="vm.selectedBandFour.color">
+                            <md-optgroup label="Band Four">
+                                <md-option ng-value="resistor" ng-repeat="resistor in vm.resistors" class="drop" > {{resistor.color}}</md-option>
+                            </md-optgroup>
+                        </md-select>
+                    </md-input-container>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+
+
+
+<md-card class="ban-wid" layout="column" layout-align="start center">
+    <div layout="row" layout-padding layout-align="center center" class="banner">
+        <div>
+            <i class="fa fa-calculator calc-icon" aria-hidden="true"></i>
+        </div>
+        <div class="tit">Electric Color Code</div>
+    </div>
+    <div class="resistor">
+        <div class="band-one" style="background-color: {{vm.selectedBandOne.hexColor}};">
+        </div>
+        <div class="band-two" style="background-color: {{vm.selectedBandTwo.hexColor}};">
+        </div>
+        <div class="band-three" style="background-color: {{vm.selectedBandThree.hexColor}};">
+        </div>
+        <div class="band-four" style="background-color: {{vm.selectedBandFour.hexColor}};">
+        </div>
+    </div>
+    <div>
+        <h3 layout="column" layout-padding layout-align="center center" class="font">
+            Value: {{vm.averageValue | number}} ohms
+        </h3>
+        <h3 class="font">
+            Tolerance Value: {{vm.toleranceValue}}
+        </h3>
+    </div>
+
+</md-card>
+
+
+

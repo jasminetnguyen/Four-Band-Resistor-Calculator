@@ -1,0 +1,38 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C3C16DCB-FA33-47EC-94DD-8BDFFC95C9C5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FB3ED7F0-3CA3-4511-AAEF-C7A5B1101236}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "BlindsInterview", "src\BlindsInterview\BlindsInterview.xproj", "{441BA0BA-8617-4D02-A632-60A54204231C}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "BlindsInterview.Tests", "src\BlindsInterview.test\BlindsInterview.Tests.xproj", "{44DEEEC6-122D-4AF0-A34D-A494290D56B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{441BA0BA-8617-4D02-A632-60A54204231C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{441BA0BA-8617-4D02-A632-60A54204231C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{441BA0BA-8617-4D02-A632-60A54204231C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{441BA0BA-8617-4D02-A632-60A54204231C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44DEEEC6-122D-4AF0-A34D-A494290D56B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44DEEEC6-122D-4AF0-A34D-A494290D56B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44DEEEC6-122D-4AF0-A34D-A494290D56B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44DEEEC6-122D-4AF0-A34D-A494290D56B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{441BA0BA-8617-4D02-A632-60A54204231C} = {C3C16DCB-FA33-47EC-94DD-8BDFFC95C9C5}
+		{44DEEEC6-122D-4AF0-A34D-A494290D56B9} = {C3C16DCB-FA33-47EC-94DD-8BDFFC95C9C5}
+	EndGlobalSection
+EndGlobal
