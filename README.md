@@ -12,3 +12,10 @@
  - AngularJS
  - Angular Material
  - Flexbox
+ 
+
+
+### App Preview
+![Blinds Interview](http://i.imgur.com/cSAMJbY.png)
+
+
