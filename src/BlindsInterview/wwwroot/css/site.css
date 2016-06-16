@@ -115,6 +115,14 @@ textarea {
     letter-spacing: 8px;
 }
 
+.font-label {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
 .selection {
     font-family: "Montserrat", sans-serif;
     font-weight: 200;
@@ -132,4 +140,12 @@ textarea {
     .drop .md-text {
         font-size:.8em;
     
+    }
+    .border-top{
+        border-top: 1px solid black;
+        margin: 0;
+        margin-top: -20px;
+    }
+    .top{
+        margin-top: 0px;
     }
